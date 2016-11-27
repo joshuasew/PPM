@@ -9,7 +9,7 @@ public class Sample
 {
     public static void main(String[] args) throws FileNotFoundException
     {
-        String one,two, three, four, five, six, seven, eight;
+        String one,two, three, four, five, six, seven, eight, nine;
 
         System.out.println("Portable Pixmap (PPM) Image Editor");
         System.out.println();
@@ -33,8 +33,9 @@ public class Sample
         System.out.println("");
 
         System.out.print("Do you want [1]? (y/n) ");
-        one = "";
+        one = sc.nextLine();
         while (!(one.equals("y") || one.equals("n"))) {
+            System.out.print("Invalid input. Please enter \"y\" or \"n\": ");
             one = sc.nextLine();
         }
 
@@ -44,8 +45,9 @@ public class Sample
 
         System.out.print("Do you want [2]? (y/n) ");
 
-        two = "";
+        two = sc.nextLine();
         while (!(two.equals("y") || two.equals("n"))) {
+            System.out.print("Invalid input. Please enter \"y\" or \"n\": ");
             two = sc.nextLine();
         }
 
@@ -54,8 +56,9 @@ public class Sample
         }
 
         System.out.print("Do you want [3]? (y/n) ");
-        three = "";
+        three = sc.nextLine();
         while (!(three.equals("y") || three.equals("n"))) {
+            System.out.print("Invalid input. Please enter \"y\" or \"n\": ");
             three = sc.nextLine();
         }
 
@@ -64,8 +67,9 @@ public class Sample
         }
 
         System.out.print("Do you want [4]? (y/n) ");
-        four = "";
+        four = sc.nextLine();
         while (!(four.equals("y") || four.equals("n"))) {
+            System.out.print("Invalid input. Please enter \"y\" or \"n\": ");
             four = sc.nextLine();
         }
 
@@ -74,8 +78,9 @@ public class Sample
         }
 
         System.out.print("Do you want [5]? (y/n) ");
-        five = "";
+        five = sc.nextLine();
         while (!(five.equals("y") || five.equals("n"))) {
+            System.out.print("Invalid input. Please enter \"y\" or \"n\": ");
             five = sc.nextLine();
         }
 
@@ -84,8 +89,9 @@ public class Sample
         }
 
         System.out.print("Do you want [6]? (y/n) ");
-        six = "";
+        six = sc.nextLine();
         while (!(six.equals("y") || six.equals("n"))) {
+            System.out.print("Invalid input. Please enter \"y\" or \"n\": ");
             six = sc.nextLine();
         }
 
@@ -94,8 +100,9 @@ public class Sample
         }
 
         System.out.print("Do you want [7]? (y/n) ");
-        seven = "";
+        seven = sc.nextLine();
         while (!(seven.equals("y") || seven.equals("n"))) {
+            System.out.print("Invalid input. Please enter \"y\" or \"n\": ");
             seven = sc.nextLine();
         }
 
@@ -104,8 +111,9 @@ public class Sample
         }
 
         System.out.print("Do you want [8]? (y/n) ");
-        eight = "";
+        eight = sc.nextLine();
         while (!(eight.equals("y") || eight.equals("n"))) {
+            System.out.print("Invalid input. Please enter \"y\" or \"n\": ");
             eight = sc.nextLine();
         }
 

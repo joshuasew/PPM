@@ -39,7 +39,22 @@ public class PPMFunk extends PPM {
     }
 
     public void flip_horizontally() {
+        int temp = 0;
+        for (int i = 0; i < height; i++) {
+            for (int j = 0; j < (width/2); j++) {
+                temp = r[i][j];
+                r[i][j] = r[i][width-j-1];
+                r[i][width-j-1] = temp;
 
+                temp = g[i][j];
+                g[i][j] = g[i][width-j-1];
+                g[i][width-j-1] = temp;
+
+                temp = b[i][j];
+                b[i][j] = b[i][width-j-1];
+                b[i][width-j-1] = temp;
+            }
+        }
     }
 
     public void grey_scale() {
