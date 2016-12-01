@@ -33,10 +33,9 @@ public class PPM {
         Scanner sc = null;
         try {
             sc = new Scanner(f);
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
+        } catch (FileNotFoundException fe) {
+            System.out.println("File not found!");
         }
-
 
         magic = sc.nextLine();
         width = sc.nextInt();

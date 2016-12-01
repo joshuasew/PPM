@@ -99,5 +99,32 @@ public class PPMFunk extends PPM {
 //        }
 //    }
 
+    public void extreme_contrast(){
+        for (int i = 0; i < height; i++){
+            for (int j =0; j < width; j++){
+                int midpoint = 255/2;
+                if (r[i][j] > midpoint)
+                {
+                    r[i][j] = 255;
+                }
+                else{
+                    r[i][j] = 0;
+                }
+                if (g[i][j] > midpoint){
+                    g[i][j] = 255;
+                }
+                else{
+                    g[i][j] = 0;
+                }
+                if (b[i][j] > midpoint){
+                    b[i][j] = 255;
+                }
+                else{
+                    b[i][j] = 0;
+                }
+            }
+        }
+    }
+
 
 }

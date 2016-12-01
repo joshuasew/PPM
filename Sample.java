@@ -1,4 +1,5 @@
 import java.io.FileNotFoundException;
+import java.lang.NullPointerException;
 import java.util.*;
 
 /**
@@ -7,7 +8,7 @@ import java.util.*;
 
 public class Sample
 {
-    public static void main(String[] args) throws FileNotFoundException
+    public static void main(String[] args) throws FileNotFoundException, NullPointerException
     {
         String one,two, three, four, five, six, seven, eight, nine;
 
@@ -30,6 +31,7 @@ public class Sample
         System.out.println("[1]  convert to greyscale [2]  flip horizontally");
         System.out.println("[3]  negative of red [4]  negative of green [5]  negative of blue");
         System.out.println("[6]  just the reds   [7]  just the greens   [8]  just the blues");
+        System.out.println("[9]  extreme contrast");
         System.out.println("");
 
         System.out.print("Do you want [1]? (y/n) ");
@@ -119,6 +121,17 @@ public class Sample
 
         if(eight.equals("y")){
             image.flatten_blue();
+        }
+
+        System.out.print("Do you want [9]? (y/n) ");
+        nine = sc.nextLine();
+        while (!(nine.equals("y") || nine.equals("n"))) {
+            System.out.print("Invalid input. Please enter \"y\" or \"n\": ");
+            nine = sc.nextLine();
+        }
+
+        if(nine.equals("y")){
+            image.extreme_contrast();
         }
 
         System.out.println();
